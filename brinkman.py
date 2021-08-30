@@ -21,7 +21,7 @@ def brinkman_mms(mesh, params=None):
         return brinkman_mms(mesh, params)
 
     # Transformation of parameters
-    gamma = nu*(1/K)*alpha**2*dt
+    gamma = nu*(1/K)*alpha**2*(1/dt)
     R = K*dt*(1/alpha**2)
 
     # We have 
